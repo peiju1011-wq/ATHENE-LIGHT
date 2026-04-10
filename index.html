@@ -249,14 +249,24 @@ body{
 }
 
 .logo{
-  position:fixed;
-  top:24px;
-  left:40px;
-  z-index:999;
+
+  top: 24px;
+  left: 24px;
+
+  z-index: 9999;
+
+  padding: 10px 16px;
+  background: #f6f6f6;
+  backdrop-filter: blur(6px);
+
+  border-radius: 999px;
+
+  display: flex;
+  align-items: center;
 }
 
 .logo img{
-  height:33px;   /* 🔥 可調：26~36 最好看 */
+  height:31px;   /* 🔥 可調：26~36 最好看 */
   object-fit:contain;
   cursor:pointer;
   opacity:.9;
