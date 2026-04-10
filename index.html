@@ -133,6 +133,7 @@ body{
   text-align:center;
   max-width:768px;
   margin:auto;
+  transform:translateY(-60px);
 }
 
 /* =========================
@@ -143,6 +144,7 @@ body{
   grid-template-columns:repeat(3,1fr);
   gap:24px;
   padding:0 24px;
+  transform:translateY(-60px);
 }
 
 .gallery img{
@@ -150,6 +152,7 @@ body{
   height:420px;   /* ⭐ 桌機固定高度 */
   object-fit:cover;
   border-radius:4px;
+  
 }
 
 
@@ -166,6 +169,8 @@ body{
 
   .gallery img{
     height:auto;   /* ⭐ 取消固定高度（關鍵） */
+    
+    transform:translateY(-70px);
   }
 
 }
@@ -218,11 +223,13 @@ body{
   max-width:1200px;
   margin:auto;
   padding:0 24px;
+  
 }
 
 .feature img{
   width:100%;
   height:420px;
+  border-radius:4px;
   object-fit:cover;
 }
 
