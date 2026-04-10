@@ -91,11 +91,31 @@ body{
   position:relative;
 }
 
+
+
 .img-wrap img{
   width:100%;
   height:520px;
   object-fit:cover;
   border-radius:4px;
+}
+/* =========================
+   📱 HERO 圖片可調整版本
+========================= */
+:root{
+  --hero-img-y: 20%;   /* 🔥 在這裡改（0%~50%） */
+}
+
+@media(max-width:768px){
+
+  .img-wrap img{
+    width:100%;
+    height:420px;            /* 可改高度 */
+    object-fit:cover;
+
+    transform:translateY(-60px);  /* 🔥 往上推 */
+  }
+
 }
 
 .shadow{
@@ -103,6 +123,8 @@ body{
   inset:0;
   box-shadow:0 40px 80px rgba(0,0,0,.12);
   pointer-events:none;
+  transform:translateY(-50px);
+  border-radius:4px;
 }
 
 /* ===== DESC ===== */
