@@ -299,6 +299,10 @@ body{
 .logo img:hover{
   opacity:1;
 }
+
+.desc{
+  white-space: pre-line;  /* 🔥 才會換行 */
+}
 </style>
 </head>
 
@@ -364,7 +368,18 @@ body{
 const data = {
   name:{ zh:"線性吊燈", en:"LINEAR PENDANT LIGHT"},
   subtitle:{ zh:"極簡線性吊燈", en:"Minimal Linear Pendant Light"},
-  desc:{ zh:"以光為筆，描繪餐桌上的日常氛圍", en:"Using light as a brush to shape everyday dining atmosphere"},
+desc:{
+  zh:`極簡線性設計
+讓光回到最純粹的狀態
+
+書房、客廳、餐桌、吧檯
+一盞燈，輕鬆融入各種空間`,
+  en:`Minimal linear design
+bringing light back to its purest form
+
+Study, living room, dining table, or bar
+one light blends seamlessly into any space`
+},
   cover:"./images/main-2.png",
 
   gallery:[
