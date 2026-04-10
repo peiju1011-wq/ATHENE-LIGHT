@@ -368,18 +368,23 @@ body{
 const data = {
   name:{ zh:"線性吊燈", en:"LINEAR PENDANT LIGHT"},
   subtitle:{ zh:"極簡線性吊燈", en:"Minimal Linear Pendant Light"},
+
+  /* HERO 用（短） */
 desc:{
   zh:`極簡線性設計
-讓光回到最純粹的狀態
+讓光回到最純粹的狀態`,
+  en:"Shaping space with light"
+},
 
-書房、客廳、餐桌、吧檯
+descLong:{
+  zh:`書房、客廳、餐桌
+
 一盞燈，輕鬆融入各種空間`,
-  en:`Minimal linear design
-bringing light back to its purest form
+  en:`Study, living room, or dining table
 
-Study, living room, dining table, or bar
 one light blends seamlessly into any space`
 },
+
   cover:"./images/main-2.png",
 
   gallery:[
@@ -389,32 +394,32 @@ one light blends seamlessly into any space`
   ],
 
   specs:[
-  {
-    size:{ zh:"60CM / 600mm", en:"60CM / 600mm" },
-    power:"24W",
-    space:{ zh:"4–6坪", en:"4–6 m²" }
-  },
-  {
-    size:{ zh:"80CM / 800mm", en:"80CM / 800mm" },
-    power:"38W",
-    space:{ zh:"6–10坪", en:"6–10 m²" }
-  },
-  {
-    size:{ zh:"100CM / 1000mm", en:"100CM / 1000mm" },
-    power:"46W",
-    space:{ zh:"10–15坪", en:"10–15 m²" }
-  },
-  {
-    size:{ zh:"120CM / 1200mm", en:"120CM / 1200mm" },
-    power:"52W",
-    space:{ zh:"12–18坪", en:"12–18 m²" }
-  },
-  {
-    size:{ zh:"150CM / 1500mm", en:"150CM / 1500mm" },
-    power:"65W",
-    space:{ zh:"15–20坪", en:"15–20 m²" }
-  }
-],
+    {
+      size:{ zh:"60CM / 600mm", en:"60CM / 600mm" },
+      power:"24W",
+      space:{ zh:"4–6坪", en:"4–6 m²" }
+    },
+    {
+      size:{ zh:"80CM / 800mm", en:"80CM / 800mm" },
+      power:"38W",
+      space:{ zh:"6–10坪", en:"6–10 m²" }
+    },
+    {
+      size:{ zh:"100CM / 1000mm", en:"100CM / 1000mm" },
+      power:"46W",
+      space:{ zh:"10–15坪", en:"10–15 m²" }
+    },
+    {
+      size:{ zh:"120CM / 1200mm", en:"120CM / 1200mm" },
+      power:"52W",
+      space:{ zh:"12–18坪", en:"12–18 m²" }
+    },
+    {
+      size:{ zh:"150CM / 1500mm", en:"150CM / 1500mm" },
+      power:"65W",
+      space:{ zh:"15–20坪", en:"15–20 m²" }
+    }
+  ],
 
   features:[
     {
@@ -427,16 +432,13 @@ one light blends seamlessly into any space`
       desc:{zh:"厚實鋁材，防腐耐用",en:"Durable aluminum"},
       img:"./images/material.png"
     },
-
-     {
+    {
       title:{zh:"霧面工藝",en:"Matte Finish"},
       desc:{zh:"磨砂烤漆質感細膩",en:"Fine textured matte coating"},
       img:"./images/detail.png"
     }
-
-    
   ]
-}
+};
 
 
 
@@ -455,7 +457,8 @@ function render(){
   document.getElementById("title").innerText = getText(data.name);
   document.getElementById("subtitle").innerText = getText(data.subtitle);
   document.getElementById("desc").innerText = getText(data.desc);
-  document.getElementById("desc2").innerText = getText(data.desc);
+ document.getElementById("desc").innerText = getText(data.desc);
+document.getElementById("desc2").innerText = getText(data.descLong);
 
   document.getElementById("cover").src = data.cover;
 
