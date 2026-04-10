@@ -114,13 +114,17 @@ body{
 }
 
 /* ===== GALLERY ===== */
-.gallery{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:24px;
-  padding:0 24px;
-  margin-bottom:128px;
-}
+ .gallery{
+    grid-template-columns:1fr;   
+    gap:1px;                    
+    padding:0 16px }
+
+  .gallery img{
+    width:100%;
+    height:auto;               
+    object-fit:cover;
+    border-radius:4px;          
+  }
 
 .gallery img{
   width:100%;
